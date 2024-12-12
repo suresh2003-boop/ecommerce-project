@@ -1,0 +1,194 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+/* Page Container */
+.product-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+/* Form Section */
+.form-container {
+    flex: 1;
+    max-width: 400px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4a90e2;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #4a90e2;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #357ab8;
+}
+
+/* Product Section */
+.products-container {
+    flex: 2;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.products-container h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4a90e2;
+}
+
+.fetch-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fetch-button:hover {
+    background: #218838;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+table th {
+    background: #4a90e2;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #e6f7ff;
+}
+
+table td img {
+    max-width: 80px;
+    border-radius: 6px;
+}
+
+table td button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table td button:first-child {
+    background: #ffc107;
+    color: white;
+    margin-right: 8px;
+}
+
+table td button:first-child:hover {
+    background: #e0a800;
+}
+
+table td button:last-child {
+    background: #dc3545;
+    color: white;
+}
+
+table td button:last-child:hover {
+    background: #c82333;
+}
+
+/* Box Shadow Effect */
+.form-container, .products-container {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover, .products-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
